@@ -1,2 +1,3 @@
-# hepial-compiler
-Hepial Compiler in Java
+# Technique de Compilation
+
+Compilateur Hepial en Java

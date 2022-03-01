@@ -1,0 +1,57 @@
+programme FibonacciQuiz
+entier fibo;
+entier fiboPrecedent;
+entier entree;
+entier score;
+entier tmp;
+booleen test;
+debutprg
+	score = 0;
+	fibo = 1;
+	fiboPrecedent = 1;
+
+	//Les deux premières valeurs de la suite fibonacci doivent
+	//être calculées en dehors de la boucle
+
+    ecrire "Quel est le premier nombre de Fibonacci?";
+	lire entree;
+
+	tantque entree <> fiboPrecedent faire 
+		ecrire "Non ce n'est pas ça!";
+		ecrire "Quel est le premier nombre de Fibonacci?";
+		lire entree;
+	fintantque
+
+	entree = 1;
+
+	ecrire "Quel est le deuxième nombre de Fibonacci?";
+	lire entree;
+
+
+	tantque entree <> fibo faire 
+		score =+1;
+		ecrire "Non ce n'est pas ça!";
+		ecrire "Quel est le deuxième nombre de Fibonacci?";
+		lire entree;
+	fintantque
+
+
+
+	tantque entree == fibo faire
+		score =+1;
+		tmp = fibo;
+		fibo =+ fiboPrecedent;
+		fiboPrecedent = tmp;
+		ecrire "Quel est le nombre de Finbonacci Suivant?";
+		lire entree;
+    fintantque
+
+	ecrire "Non, le bon nombre est: ";
+	ecrire fibo;
+
+	ecrire "";
+	ecrire "Votre score est: ";
+	ecrire score;
+	ecrire "";
+
+finprg

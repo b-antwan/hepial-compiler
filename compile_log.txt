@@ -1,0 +1,4 @@
+Lex. looking good!
+Syntax looking good!
+Sematincs looking good!
+Jasmin code generated!
